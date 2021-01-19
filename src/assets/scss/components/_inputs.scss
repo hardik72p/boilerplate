@@ -1,0 +1,30 @@
+@import '../abstract/variables';
+
+.form-control {
+    color: $color-gray3;
+    border: 1px solid $color-graylight2;
+    &:focus {
+        box-shadow: 0 0 0 0.2rem rgba(0,123,255,0);
+    }
+}
+
+textarea {
+    resize: none;
+}
+
+.datepicker {
+    position: relative;
+    &:after{
+        content: "\f073";
+        font-family:'FontAwesome';
+        font-size: 18px;
+        color: $color-gray2;
+        position: absolute;
+        right: 10px;
+        bottom: 4px;
+    }
+}
+
+.prr__control {
+    border-color: $color-graylight2;
+}

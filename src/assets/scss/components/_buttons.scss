@@ -1,0 +1,32 @@
+@import '../abstract/variables';
+
+.btn {
+    &-primary {
+        background-color: $color-primary;
+        border-bottom: 3px solid rgba($color-primary2, 1);
+        &:hover {
+            background-color: $color-primary2;
+            border-color: $color-primary2;
+        }
+        &:focus {
+            box-shadow: 0 0 0 0.2rem rgba($color-primary2, 0);
+        }
+        &:not(:disabled):not(.disabled):active {
+            background-color: $color-primary2;
+            border-color: $color-primary2;
+        }
+    }
+
+    &-outline-secondary {
+        color: $color-black;
+        border-color: $color-hexgray;
+        border-bottom: 3px solid rgba($color-hexgray, 1);
+        &:hover {
+            background-color: $color-graylight;
+            border-color: $color-graylight;
+        }
+        &:focus {
+            box-shadow: 0 0 0 0.2rem rgba($color-graylight, 0);
+        }
+    }
+}

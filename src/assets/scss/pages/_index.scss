@@ -1,0 +1,87 @@
+.wrapper  {
+    width:100%;
+    float:left;
+    padding:0;
+    margin:0;
+}
+
+.header-sec {
+    .logo-area {
+        height: 65px;
+    }
+
+    .navbar-nav .nav-item {
+        margin-left: 20px;
+    }
+    .navbar-nav .nav-link {
+        color: $color-graydark;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        &:hover {
+            background-color: $color-offwhite;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    .dropdown-toggle::after {
+        display: none;
+    }
+    .dropdown-item {
+        color: $color-graydark;
+        &:hover {
+            background-color: $color-offwhite;
+            color: $color-graydark;
+        }
+        &:focus {
+            background-color: $color-offwhite;
+            color: $color-graydark;
+        }
+        &:active {
+            background-color: $color-offwhite;
+            color: $color-graydark;
+        }
+    }
+    .notify {
+        background-color: $color-red;
+        width: 7px;
+        height: 7px;
+        border-radius: 30px;
+        position: absolute;
+        left: 12px;
+        top: 28px;
+    }
+    .notification-list {
+        .notification-circle {
+            min-width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: $color-primary 2px solid;
+        }
+        .notification-info {
+            h6{
+                font-size: 13px;
+                color: $color-graylight;
+            }
+            p {
+                font-size: 12px;
+                color: #8f979e;
+            }
+        }
+    }
+}
+
+.report-detail {
+    .table thead th {
+        color: $color-graylight;
+        border-top-color: $color-gray;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .table th, .table td {
+        color: $color-gray;
+        border: 1px solid $color-graylight2;
+    }
+}
